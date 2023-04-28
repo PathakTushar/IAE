@@ -1,0 +1,67 @@
+.bgimg {
+  background: url("https://static.wixstatic.com/media/ead566_a12b3feb70ae46139eee97c99f6ecebf~mv2.jpg/v1/fill/w_974,h_548,al_c,q_85,usm_0.66_1.00_0.01/ead566_a12b3feb70ae46139eee97c99f6ecebf~mv2.webp");
+  height: 30vh;
+  position: relative;
+  opacity: 10;
+  background-attachment: fixed;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ParallaxVideo {
+  height: 50vh;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  overflow: hidden;
+  width: 100vw;
+}
+.ParallaxVideo video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+  overflow: hidden;
+}
+
+.parallaxText {
+  width: 50%;
+  margin: 0 auto;
+}
+.parallaxText h1{
+  font-size: 3rem;
+}
+.parallaxText h3{
+  font-size: 2rem;
+}
+@media (max-width: 1400px)
+{
+  .parallaxText{
+    width: 70%;
+  }
+}
+@media (max-width: 1000px)
+{
+  .parallaxText h1{
+    font-size: 2rem;
+  }
+  .parallaxText h3{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 520px)
+{
+  .parallaxText{
+    width: 90%;
+  }
+  .parallaxText h1{
+    font-size: 1.8rem;
+  }
+  .parallaxText h3{
+    font-size: 1.3rem;
+  }
+
+}

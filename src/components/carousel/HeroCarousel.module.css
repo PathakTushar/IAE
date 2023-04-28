@@ -1,0 +1,181 @@
+.backgroundVideo {
+  height: 45vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+  /* overflow: hidden; */
+}
+h1,h2{
+  margin: 0;
+  padding: 0;
+}
+.videoH1, .videoH2 {
+  color: rgba(255, 255, 255, 0.921);
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  bottom: 70%;
+}
+
+.videoH1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.videoH2 { 
+  font-size: 3rem; 
+  padding-top: 0;
+  margin-top: 1rem;
+}
+.secondImage{
+  position: relative;
+  top: 10%;
+  left: 20%;
+}
+.living{
+  color: #fff86b;
+  font-size: 5rem;
+  opacity: 0;
+  animation: fade-in-transition 1s ease-in-out forwards;
+}
+.sustainably{
+  color: #fff86b;
+  font-size: 5rem;
+  opacity: 0;
+  animation: fade-in-transition 1s ease-in-out forwards;
+}
+@keyframes fade-in-transition{
+  100%{
+    opacity: 1;
+  }
+}
+.secondH2{
+  color: #fff86b;
+  font-size: 4rem;
+  transform: translateX(-10%);
+  animation: left-right-animation 1s ease-in-out forwards;
+}
+@keyframes left-right-animation{
+  100%{
+      transform: translate(0);
+  }
+}
+.thirdImage{
+  text-align: center;
+  position: relative;
+  top: 15%;
+}
+.become{
+  color: #0b4425;
+  font-size: 5rem;
+  transform: translateX(10%);
+  animation: left-right-animation 1s ease-in-out forwards;
+}
+.sustainable{
+  color: #0b4425;
+  font-size: 5rem;
+  transform: translateX(10%);
+  animation: left-right-animation 1s ease-in-out forwards;
+}
+.startButton{
+  color: white;
+  background-color: #0b4425;
+  padding: 1rem 5rem;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translateX(-20%);
+  animation: left-right-animation 1s ease-in-out forwards;
+}
+.startButton:hover{
+  background-color: #08341c;
+}
+.imageCarousel{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 45vh;
+  overflow: hidden;
+}
+
+.heroContainer {
+  height: 45vh;
+  width: 100vw;
+  margin-top: 7rem;
+  position: relative;
+  overflow: hidden;
+}
+/* .backArrow{
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.nextArrow{
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.backArrow:hover{
+  color: rgba(228, 223, 223, 0.658);
+}
+.nextArrow:hover{
+  color: rgba(228, 223, 223, 0.658);
+} */
+
+@media (max-width:1175px){
+  .living,.sustainably{
+    font-size: 4rem;
+  }
+  .secondH2{
+    font-size: 3rem;
+  }
+}
+@media (max-width:700px){
+  .secondImage{
+    top: 20%;
+    left: 10%;
+  }
+  .living,.sustainably{
+    font-size: 3rem;
+  }
+  .secondH2{
+    font-size: 2rem;
+  }
+}
+@media (max-width:475px){
+  .videoH1{
+    font-size: 3rem;
+  }
+  .videoH2{
+    font-size: 2rem;
+  }
+  .become,.sustainable{
+    font-size: 3rem;
+  }
+  .secondImage{
+    padding: 0 1rem;
+    left: 0;
+  }
+}
+@media (max-width:350px)
+{
+  .living,.sustainably{
+    font-size: 2.5rem;
+  }
+  .secondH2{
+    font-size: 1.5rem;
+  }
+}

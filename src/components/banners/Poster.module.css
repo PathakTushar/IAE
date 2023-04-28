@@ -1,0 +1,144 @@
+.posterContainer{
+    width: 100vw;
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+.posterVideo{
+    height: 110vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+.posterContent {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 2rem 0;
+    z-index: 3;
+    width: 100%;
+}
+.posterContentContainer{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.imageBox{
+    grid-column: span 2;
+    /* animation: pop 2s ease-in-out forwards; */
+}
+.imageBox img{
+    object-fit: contain;
+    height: 400px;
+}
+/* @keyframes pop{
+	0% { opacity: 0; }
+	5% { opacity: 0; transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px);}
+	20% { opacity: 0.5; }
+	50% { opacity: 0.8; transform: translateY(0px); }
+	100% { opacity: 1; }
+} */
+.textBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    max-width: 60%;
+    line-height: 3rem;
+}
+
+.textBox p{
+    line-height: 2rem;
+}
+
+@media (max-width:1275px)
+{
+    .imageBox img{
+        height: 350px;
+    }
+    .textBox{
+        max-width: 80%;
+    }
+    .posterContainer{
+        height: 100vh;
+    }
+}
+@media (max-width:1050px){
+    .posterContainer{
+        height: 90vh;
+    }
+    .imageBox img{
+        height: 300px;
+    }
+    .textBox{
+        line-height: 2rem;
+    }
+}
+@media (max-width:925px){
+    .posterContainer{
+        height: 80vh;
+    }
+    .imageBox img{
+        height: 250px;
+    }
+    .posterContentContainer{
+        width: 90%;
+    }
+    .textBox p{
+        line-height: 1.5rem;
+    }
+}
+/* @media(max-height:850px)
+{
+    .posterContainer{
+        height: 60vh;
+    }
+    .posterVideo{
+        height: 200%;
+    }
+} */
+@media (max-width:775px){
+    .textBox {
+        max-width: 100%;
+    }
+    .posterContainer{
+        height: 80vh;
+    }
+    .imageBox img{
+        height: 200px;
+    }
+    .posterContentContainer{
+        width: 95%;
+    }
+}
+@media (max-width:650px){
+    .posterContentContainer{
+        grid-template-columns: repeat(1,1fr)
+    }
+    .posterContainer{
+        height: 100vh;
+    }
+    .textBox h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+@media (max-width:450px){
+    .imageBox img{
+        height: 200px;
+    }
+    .posterContainer{
+        height: 100vh;
+    }
+}
+
+
+

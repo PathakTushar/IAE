@@ -1,0 +1,17 @@
+.mainBenefitContainer{
+    background: linear-gradient(rgba(255, 255, 255, 0.595),rgba(255, 255, 255, 0.562)),url('../../../public/cover.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 7rem;
+    margin-bottom: -1rem;
+    padding: 1rem;
+}
+.benefitContainer{
+    width: 60%;
+    margin: 0 auto; 
+    padding: 1rem;  
+    border: 1px solid black; 
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 5px black;
+}

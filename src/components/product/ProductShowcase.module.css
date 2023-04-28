@@ -1,0 +1,22 @@
+.ProductShowcaseContainer{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 11rem;
+}
+.productShowcase{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+}
+@media (max-width:1050px){
+    .productShowcase{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:700px){
+    .productShowcase{
+        grid-template-columns: auto;
+    }
+}

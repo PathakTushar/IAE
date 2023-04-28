@@ -1,0 +1,185 @@
+.header {
+  background-color: #d31345;
+  color: white;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100vw;
+  z-index: 9999999;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  padding: 1rem 0;
+  top: 0;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li p {
+  display: block;
+}
+.header li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.title h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.title p {
+  margin-top: 0;
+  padding-top: 0;
+  /* display: none; */
+}
+.rubicCube {
+  cursor: pointer;
+  /* display: none; */
+}
+.rubicCube img {
+  animation: rotation 1s ease-in-out forwards;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.navItem {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.navItem:hover {
+  color: #dfb1bd;
+}
+.getInTouch{
+  border: none;
+}
+.cart {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 0;
+}
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  /* transition: max-height .2s ease-out; */
+}
+
+/* menuIcon */
+
+.header .menuIcon {
+  cursor: pointer;
+  display: inline-block;
+  /* float: right; */
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menuIcon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menuIcon .navicon:before,
+.header .menuIcon .navicon:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menuIcon .navicon:before {
+  top: 5px;
+}
+
+.header .menuIcon .navicon:after {
+  top: -5px;
+}
+
+/* menuBtn */
+
+.header .menuBtn {
+  display: none;
+}
+
+.header .menuBtn:checked ~ .menu {
+  max-height: 100vh;
+  grid-column: 1/-1;
+  align-self: center;
+  padding-left: 1rem;
+  /* background-color: white; */
+}
+
+.header .menuBtn:checked ~ .menuIcon .navicon {
+  background: transparent;
+}
+
+.header .menuBtn:checked ~ .menuIcon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menuBtn:checked ~ .menuIcon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
+.header .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 850px) {
+  .header{
+    padding: 0;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menuIcon {
+    display: none;
+  }
+  .getInTouch {
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .getInTouch:hover {
+    background: white;
+    color: green;
+  }
+}

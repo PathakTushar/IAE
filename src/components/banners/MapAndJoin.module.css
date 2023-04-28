@@ -1,0 +1,88 @@
+.joinContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    background-color: white;
+    margin: 0;
+}
+.joinContainer h1{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+@keyframes pop{
+	0% { opacity: 0; }
+	5% { opacity: 0; transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px);}
+	20% { opacity: 0.5; }
+	50% { opacity: 0.8; transform: translateY(0px); }
+	100% { opacity: 1; }
+}
+.joinContainer form{
+    width: 50%;
+    margin-top: 1rem;
+    
+}
+.joinContainer form input{
+    font-size: 1.2em;
+    padding: 1rem 1rem;
+    width: 70%;
+    transition: all 0.3s ease-in-out;
+    /* transform: translateX(-50%);
+    animation: left-right-animation 1s ease-in-out forwards; */
+}
+@keyframes left-right-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+.joinContainer form input:hover{
+    border: 2px solid #15843c;
+}
+.joinContainer form input:focus{
+    outline: #15843c;
+}
+.joinContainer form button{
+    padding: 1rem 5rem;
+    font-size: 1.2em;
+    background-color: #15843c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #15843c;
+    /* transform: translateX(50%);
+    animation: left-right-animation 1s ease-in-out forwards; */
+}
+.joinContainer form button:hover{
+    color: #15843c;
+    background-color: white;
+    padding: 1rem 5rem;
+}
+@media (max-width: 1550px){
+    .joinContainer form input{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .joinContainer form button{
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 750px){
+    .joinContainer h1{
+        font-size: 2rem;
+    }
+    .joinContainer h3{
+        font-size: 1rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    .joinContainer form input{
+        font-size: 1em;
+    }
+    .joinContainer form button{
+        font-size: 1em;
+    }
+}

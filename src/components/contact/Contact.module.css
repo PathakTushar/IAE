@@ -1,0 +1,45 @@
+.contactDiv{
+    background-color: white;
+    width: 100vw;
+}
+.contactContainer{
+    /* margin: 0 auto; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactWrapper{
+    text-align: center;
+}
+/* .imageWrapper{
+    width: 50%;
+} */
+.locationIcon{
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+.instaIcon{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+/**/
+@media(max-width:1050px){
+    .imageWrapper{
+        display: none;
+    }
+    .contactDiv{
+        background-image: linear-gradient(#ffffff59,#ffffff4e),url("https://static.wixstatic.com/media/85f2dda759fc4c3ea3d758c583418515.jpg/v1/fill/w_487,h_844,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/85f2dda759fc4c3ea3d758c583418515.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .contactWrapper{
+        padding: 0;
+        margin: 1rem 0.5rem;
+        border-radius: 9px;
+        box-shadow: -3px 5px 15px black;
+        background-color: rgba(245, 245, 245, 0.573);
+    }
+}

@@ -1,0 +1,11 @@
+.productGalleryContainer{
+    background-color: white;
+}
+.galleryContainer{
+    width: 95%;
+    margin: 1rem auto;
+}
+.galleryImage img{
+    width: 95%;
+    margin: 0;
+}
